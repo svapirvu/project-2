@@ -11,15 +11,15 @@ header{
 .logo{
     color: rgba(255, 255, 255, 1);
     font-family: 'Helvetica';
-    font-size: 13px;
+    font-size: 16px;
     text-align: left;
 }
 #container{
     left: 20px;
-    display: inline-block;
-    background-color: fuchsia;
+    display: flex;
+    align-items: center;
 }
-/* #locationpic {
+ #locationpic {
      
 }
 .myloc{
@@ -70,4 +70,4 @@ header table{
 .nbincart{
     background-color: rgba(57, 58, 177, 1);
     border-radius: 0px 2px 0px 2px; 
-} */
+} 
