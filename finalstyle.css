@@ -1,0 +1,144 @@
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    display: block;
+    background-color: rgba(248, 203, 0, 1);
+    bottom: 0px;
+    height:35%;
+    /* position: fixed; */
+    top: 0px;
+    width: 100%;
+    left: 0px;
+}
+
+.container{
+    width: 100%;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.left{
+    width:25%;
+}
+.right{
+    width:75%;
+}
+.flex{
+    display:flex;
+}
+nav.flex{
+    justify-content: space-around;
+}
+
+.right .flex{
+    justify-content: space-between;
+}
+
+main{
+    position: relative;
+}
+
+header .left{
+    font-family: 'Helvetica';
+    font-size: 18px;
+    font-weight: 500; 
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+}
+.right img{
+    height: 0.9375rem;
+    width:auto;
+}
+#la{ 
+    color: rgba(99, 100, 216, 1);
+}
+#cartpic{
+    height: 20px;
+    width:auto;
+    display: block; 
+}
+#cart{
+    background-color: rgba(99, 100, 216, 1);
+    border-radius: 2px;
+    font-family: 'Helvetica';
+    font-size: 13px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    line-height: 45px;
+    width: 130px;
+    display: flex;
+    /* flex-direction: row; */
+}
+ .button3{
+    background-color: rgba(57, 58, 177, 1);
+    border-radius: 0px 2px 0px 2px;
+    width: 30%;
+    border-color: rgba(57, 58, 177, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.button3:hover, .button3:focus{
+    cursor: pointer;
+}
+.button{
+    background-color: rgba(99, 100, 216, 1);
+    border-radius: 2px;
+    font-family: 'Helvetica';
+    font-size: 13px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    line-height: 45px;
+    width: 130px;
+}
+ #cart .button2{
+    background-color: rgba(99, 100, 216, 1);
+    border-color: rgba(99, 100, 216, 1);
+    padding: 5px;
+    border-radius: 0px 2px 0px 2px; 
+    font-family: 'Helvetica';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+}
+.button2{
+    background-color: rgba(57, 58, 177, 1);
+    border-radius: 10px;
+    background:#000;
+    border: 3px solid #000;
+    padding: 8px 16px;
+    color: #fff;
+    margin-top: 0px;
+}
+.button2:hover, .button2:focus{
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+.search {
+    width: 60%;
+    display: flex;
+   }
+.searchTerm {
+    width: 100%;
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 2px;
+    outline: none;
+    color: #9DBFAF;
+    
+}
+.searchTerm:focus{
+    color: black;
+}
+.searchButton {
+    width: 40px;
+    height: 36px;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    color: rgba(123, 123, 123, 0.78);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
