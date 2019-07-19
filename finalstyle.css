@@ -1,16 +1,16 @@
-body{
-    margin:0;
-    padding:0;
+*{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
 }
+
+main{
+    position: relative;
+}
+
+/* HEADER */
 header{
-    display: block;
-    background-color: rgba(248, 203, 0, 1);
-    bottom: 0px;
-    height:35%;
-    /* position: fixed; */
-    top: 0px;
-    width: 100%;
-    left: 0px;
+    background: rgba(248, 203, 0, 1);
+    height: 140px;   
 }
 
 .container{
@@ -19,12 +19,24 @@ header{
     margin: 0 auto;
 }
 
+.container flex{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
 .left{
     width:25%;
 }
+
 .right{
     width:75%;
 }
+
 .flex{
     display:flex;
 }
@@ -36,9 +48,7 @@ nav.flex{
     justify-content: space-between;
 }
 
-main{
-    position: relative;
-}
+/* Logo formatting */
 
 header .left{
     font-family: 'Helvetica';
@@ -47,13 +57,19 @@ header .left{
     color: rgba(255, 255, 255, 1);
     text-align: left;
 }
+
+#la{ 
+    color: rgba(99, 100, 216, 1);
+}
+
+/* Formatting the searchbar and cart buttons */
+
+
 .right img{
     height: 0.9375rem;
     width:auto;
 }
-#la{ 
-    color: rgba(99, 100, 216, 1);
-}
+
 #cartpic{
     height: 20px;
     width:auto;
@@ -69,7 +85,6 @@ header .left{
     line-height: 45px;
     width: 130px;
     display: flex;
-    /* flex-direction: row; */
 }
  .button3{
     background-color: rgba(57, 58, 177, 1);
@@ -142,3 +157,143 @@ header .left{
     cursor: pointer;
     font-size: 20px;
 }
+
+/* Side list */
+.list-button{
+    display: block;
+    background:  rgba(255, 255, 255, 1);
+    box-shadow: none;
+    border: 0px;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+.list-item{
+    color: rgb(167, 166, 166);
+    margin-top: 10px;
+    list-style-type: none;
+  
+}
+.active{
+    color: rgba(248, 203, 0, 1);
+}
+
+/* Side menu formating */
+
+.sidemenu{
+    
+    background: rgba(255, 255, 255, 1);
+    margin-top: -55px;
+    width: 90%;
+    box-shadow: -1px 1px 14px 0px rgba(150, 150, 150, 0.75);
+    border-radius: 4px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.sideadv{
+    widows: 300px;
+    margin-top: 50px;
+}
+
+.sideadv img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Mini navigation through pages */
+
+.mininav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.cream-bar{
+    margin-left: 10px;
+}
+.cream-bar-text{
+    margin-top: 6px;
+}
+
+.cream-bar-button{
+    background:  rgba(255, 255, 255, 1);
+    box-shadow: none;
+    border: 1px solid  rgb(167, 166, 166);;
+    border-radius: 4px;
+    width: 25px;
+}
+.morecreams{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brand{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+.brand p, .brand span, .popularity p, .popularity span{
+    font-size: 12px;
+}
+
+/* Site content(creams) */
+
+.creams{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cream-image{
+    border-radius: 4px;
+    width: 22%;
+    box-shadow: -1px 1px 14px 0px rgba(150, 150, 150, 0.75);
+    height: 400px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    
+}
+.cream-image img{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+        
+}
+
+.cream-image p{
+    text-align: center;
+    margin-top: 50%x;
+    
+}
+
+.mainitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* 
+main{
+    position: relative;
+}
+
+ */
