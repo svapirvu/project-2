@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>
+            <a id="exer" href="https://github.com/">Click here</a>
+        </div>
+        <div id="page" style="padding: 20px; border: 1px solid blue">
+            <div id="container" style="padding: 20px; background: green"></div>
+        </div>
+    </body>
+
+<script>
+    /* window.onload = function(){ */
+/*         alert("The page is loaded"); */
+       
+        /* link.onclick = function(){
+            console.log("You clicked on the link");
+        }
+    };
+    window.onload=function(){
+        console.log("second load"); */
+
+    var link = document.getElementById('exer');
+    /* var fct = function(event){
+        console.log("this workkkkkkks!");
+    } */
+    /* link.addEventListener('mouseenter', function(event){
+        console.log("mouseenter on link: ", event.target.text);
+    });
+    link.addEventListener("mouseenter", function() {
+        console.log("mouseenter once");
+    },
+    {once: true}
+    ) */
+    /* link.addEventListener("mouseenter", fct , true); */
+
+/*     link.removeEventListener("mouseenter", fct); 
+ */    /*link.removeEventListener("mouseenter", fct , {passive:false});
+    link.removeEventListener("mouseenter", fct , {capture:true});
+    link.removeEventListener("mouseenter", fct , {capture:false});
+    link.removeEventListener("mouseenter", fct , false);
+    link.removeEventListener("mouseenter", fct , true); */
+/* 
+    function eventHandler(event){
+        console.log(event.type + 'on', event.target.nodeName);
+    }
+    window.addEventListener('click', function(){
+        document.documentElement.requestFullscreen();
+    });
+
+    document.addEventListener('fullscreenchange', eventHandler);
+    link.addEventListener('mouseout',eventHandler);
+
+    var event = new Event('build');
+    window.addEventListener('build', function(event){
+        console.log(event.type);
+    }, false);
+
+    window.dispatchEvent(event); */
+
+    var container = document.getElementById('container');
+    var page = document.getElementById('page');
+    function eventHandler(event){
+        console.log(event.type + "on" + event.currentTarget.id);
+        event.stopPropagation();
+    }
+    page.addEventListener('click', eventHandler, true);
+    container.addEventListener('click', eventHandler);
+</script> 
+
+</html>
