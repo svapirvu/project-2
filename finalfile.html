@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Amazing store</title>
@@ -12,7 +13,7 @@
                         Amazing store
                 </div>
                 <div class="right">
-                    <div class="flex">
+                    <div class="flex top">
                         <div>
                             <img src="location.png" alt="location icon"/>
                             My city: <span id="la">Los Angeles</span>
@@ -21,7 +22,7 @@
                             <img src="phone_filled.png" alt="phone icon"/>
                             8 800 505-04-83
                         </div>
-                        <nav class="flex">
+                        <nav class="flex navi">
                             <span>Shipping</span>
                             <span>Blog</span>
                             <span>Company</span>
@@ -51,7 +52,7 @@
                 <div class="aside item">
                     <div class="sidemenu">
                         <h5>ALL CATEGORIES</h5>
-                        <button onclick=myFunction() class="list-button">FACE</button>
+                        <button onclick="trial()" class="list-button">FACE</button>
                         <ul id="myList">
                             <li class="list-item active">Creams & Gel</li>
                             <li class="list-item">Patches</li>
@@ -140,7 +141,10 @@
                 </div>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <!-- add js file -->
+            <script src="responsive.js"> </script>
+        </footer>
     </body>
 
 </html>
