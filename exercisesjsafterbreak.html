@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body id="bod"> 
+        <span id="fakebutt" style="background-color: yellowgreen;">Show image</span>
+        <div id="mydiv"><img id="pic" src="./1.jpg" style=" height:200px; display:none;"/> </div>
+        <span id="butt2" style="background-color: red;">Remove image</span>
+        <span id="noim" style="display:none;">The image does not existttttt</span>
+        <span id="blbt" style= "background-color: blue;">Also show image</span>
+    </body>
+    <script>
+
+    var b = document.getElementById("fakebutt");
+    let show=false;
+    b.addEventListener('click',function(event){
+        if (!document.getElementsByTagName('img').length){
+          document.getElementById('noim').style.display = 'block';  
+        }
+        else{
+            if (show === false){
+                document.getElementById('pic').style.display = 'block';
+                show=true;
+            }
+            else {
+                document.getElementById('pic').style.display = 'none';
+                show=false;
+            }
+        }
+        
+    });
+    var imag = document.getElementById("pic");
+    /* pic.addEventListener('click', function(event){
+        document.getElementById('pic').style.display='none';
+    }); */
+    var butt2 = document.getElementById("butt2");
+    butt2.addEventListener('click', function(event){
+        imag.remove('pic');
+    });
+    document.body.addEventListener('click', function(event){
+        /* alert("Something was clicked"); */
+        /* console.log(event.target);
+        console.log(event.currentTarget); */
+    });
+
+    var butt3 = document.getElementById('blbt');
+    butt3.addEventListener('click', function(event){
+        b.click();
+    });
+
+    var custev = new CustomEvent('custom');
+    mydiv.addEventListener('click',function(event){
+        document.getElementById("mydiv");
+        console.log(event.type);    
+    },false); 
+
+    </script>
+</html>
