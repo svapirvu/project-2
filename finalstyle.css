@@ -189,7 +189,7 @@ header .left{
     width: 90%;
     box-shadow: -1px 1px 14px 0px rgba(150, 150, 150, 0.75);
     border-radius: 4px;
-    height: 450px;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -291,7 +291,7 @@ header .left{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     margin-top: 15px;
     position: absolute;
     padding-left: 140px;
@@ -301,7 +301,7 @@ header .left{
     width: 30%;
 }
 .wrap{
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .top{
     padding-top: 5px;
@@ -313,9 +313,73 @@ header .left{
 .aside .item{
     display:flex;
     justify-content: center;
+    width: 95%;
 }
 
+.flex .top{
+    padding-top: 30px;
+}
 
-
+.brand{
+    margin-left: -300px;
+}
 /* Media queries */
 
+@media screen and (max-device-width: 1300px){
+   
+    #side-menu{
+        width: 95%;
+        
+    }
+
+    .cream-image{
+        width: 30%;
+    }
+
+    .cart-button p{
+        display: none;
+    }
+}
+
+@media screen and (max-device-width: 1100px){
+   /*  .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-content, .right-content{
+        width: 100%;
+    } */
+    .sidemenu{
+        
+        margin-top: 0;    
+    }
+    .cream-image{
+        width: 32%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .side-cream{
+        display: none;
+    }
+}
+
+@media screen and (max-device-width: 900px){
+    .flex .top p{
+        display: none;
+    }
+     .cream-image{
+         width: 48%;
+         margin: auto;
+         margin-bottom: 25px;   
+     }
+     .left .item h1{
+         display: none;
+     }
+
+     nav, .flex .top 
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+ }
