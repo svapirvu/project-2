@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+          /*   var arr=[
+                {
+                    name: 'a',
+                    subject: '1'
+                },
+                {
+                    name: 'b',
+                    subject: '2'
+                },
+                {
+                    name: 'c',
+                    subject: '3',
+
+                fun: function(name, subject){
+                    console.log(this.subject); 
+                    }
+                }
+            ];
+            console.log(arr[2].fun()); */
+            let calculator = {
+                read() {
+                    this.a = prompt('Enter your first number',' ' );
+                    this.b = prompt('Enter your second number',' ');
+                },
+                sum() {
+                    
+                    return Number(this.a) + Number(this.b);
+                },
+                mul() {
+                    return this.a * this.b;
+                }
+            };
+            calculator.read();
+            alert(calculator.sum());
+            alert(calculator.mul());
+        </script>
+    </body>
+</html>

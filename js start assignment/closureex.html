@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+/*          function outer(a,b) {
+             let t="The sum of the given numbers is:"
+             console.log(t + a + '+' + b + '=');
+             console.log(a+b);
+             
+              function inner(){
+                 let d = "The difference of the given numbers is:"
+                 console.log(d + a + '-' + b + '=');
+                 return a-b;
+             }
+            inner(a,b); 
+         };
+        
+        console.log(">>>>>", outer(3,5));
+ */
+
+         /*    function outer(a) {
+                console.log("bla");
+                return function inner(b) {
+                    return a+b;
+                }
+            /* inner(a,b);  */
+            /* } */
+
+           /*console.log('blabla', outer(3)(7)); */
+
+            let arr=[
+                {
+                    name: 'a',
+                    age: 15
+                },
+                {
+                    name: 'b',
+                    age: 19
+                },
+                {
+                    name: 'c',
+                    age: 17
+                }
+            ];
+            /* let average = function(){
+                let totalage = 0;
+                /* for (let i = 0; i<arr.length; i++){
+                    totalage = totalage + arr[i].age;
+                }; 
+                arr.foreach(function(){
+                    totalage = totalage + age;
+                    });
+                    let avage = totalage/arr.length;
+                    return avage;
+                }; */
+           /*  let totalage = 0;
+            arr.forEach(function myFunction(item){
+                totalage = totalage + item.age;
+            });    
+
+
+            let avage = totalage / arr.length;
+            console.log(Number(avage)); */
+            console.log(this);
+
+        </script>
+    </body>
+
+</html>
