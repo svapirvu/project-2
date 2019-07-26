@@ -288,15 +288,17 @@ header .left{
 }
 
 .mainitem{
-    display: flex;
+  /*   display: flex; */
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
     margin-top: 15px;
     position: absolute;
-    padding-left: 140px;
+    padding-left: 400px;
 }
-
+h2{
+    margin-left: -300px;
+}
 .navi{
     width: 30%;
 }
@@ -308,12 +310,13 @@ header .left{
 }
 .item {
     padding-top: 25px;
+    margin-left: -60px;
 }
 
 .aside .item{
     display:flex;
     justify-content: center;
-    width: 95%;
+    width: 90%;
 }
 
 .flex .top{
@@ -325,61 +328,4 @@ header .left{
 }
 /* Media queries */
 
-@media screen and (max-device-width: 1300px){
-   
-    #side-menu{
-        width: 95%;
-        
-    }
-
-    .cream-image{
-        width: 30%;
-    }
-
-    .cart-button p{
-        display: none;
-    }
-}
-
-@media screen and (max-device-width: 1100px){
-   /*  .content{
-        display: flex;
-        flex-direction: column;
-    }
-    .left-content, .right-content{
-        width: 100%;
-    } */
-    .sidemenu{
-        
-        margin-top: 0;    
-    }
-    .cream-image{
-        width: 32%;
-        margin: auto;
-        margin-bottom: 25px;
-    }
-    .side-cream{
-        display: none;
-    }
-}
-
-@media screen and (max-device-width: 900px){
-    .flex .top p{
-        display: none;
-    }
-     .cream-image{
-         width: 48%;
-         margin: auto;
-         margin-bottom: 25px;   
-     }
-     .left .item h1{
-         display: none;
-     }
-
-     nav, .flex .top 
-        
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
- }
+@media screen 
