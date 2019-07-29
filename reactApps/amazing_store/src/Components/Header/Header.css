@@ -1,0 +1,18 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(248, 203, 0, 1);
+    height: 12rem;
+    padding: 3rem 8% 0 8%;
+}
+.header-top-container {
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 1rem;
+}
+.header-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0 0 22vw; 
+}
