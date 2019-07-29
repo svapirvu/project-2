@@ -1,0 +1,9 @@
+.logo {
+    width: 20%;
+    padding-left: 1rem;
+}
+
+.logo a {
+    text-decoration: none;
+    line-height: 1rem;
+}

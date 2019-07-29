@@ -1,0 +1,23 @@
+.myCart {
+    background: rgba(99, 100, 216, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    width: 11rem;
+    margin-left: 2vw;
+}
+.myCart-text {
+    color: #fff;
+}
+.count {
+    background: rgba(57, 58, 177, 1);
+    padding: 0.92rem;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 0 5px 5px 0;
+}
+.cart-icon {
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: .5rem;
+    font-size: 1.5rem;
+}
