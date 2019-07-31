@@ -1,5 +1,7 @@
 import React from 'react';
-import SideBar from '../SideBar/SideBar'
+import SideBar from '../SideBar/SideBar';
+import SideAd from '../SideAd/SideAd';
+import FilterBar from '../FilterBar/FilterBar';
 
 class MainContent extends React.Component{
     constructor (props){
@@ -25,6 +27,8 @@ class MainContent extends React.Component{
                 disabled={false}
                 hidden={false}
                 title={"All Categories"} />
+              {/*   <SideAd/> */}
+               {/*  <FilterBar/> */}
             </>  
         )
     }
