@@ -1,37 +1,49 @@
-import React from 'react';
-import SideBar from '../SideBar/SideBar';
+import React from 'react'
+import SideBar from '../SideBar/SideBar'
 import SideAd from '../SideAd/SideAd';
-import FilterBar from '../FilterBar/FilterBar';
+// import './Main.css'
 
-class MainContent extends React.Component{
-    constructor (props){
-        super();
-        this.state={
+
+class Main extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            isToggled: false,
             categories: {
-                    FACE: ['CREAMS & GELS','PATCHES', 'EMULSIONS','TONERS','FACE CLEANSING','MAKEUP REMOVAL', 'SCRUBS','PEELING','MASKS'],
-                    BODY: [],
-                    FOOT:[],
-                    HANDS:[],
-                    HAIR:[],
-                    MAKEUP:[]
-                }
+                FACE: {id: 1,
+                    listItems:[
+                    "Creams & Gels",
+                    "Patches",
+                    "Emulstions",
+                    "Tonners",
+                    "Face Cleansing",
+                    "Make-up Removal",
+                    "Scrubs",
+                    "Peeling",
+                    "Masks"
+                ]},
+                BODY: {id:2,listItems:["Creams", "Gel Shower"]},
+                FOOT: {id:3, listItems:["Cream"]},
+                HANDS: {id:4, listItems:["Cream","Balsam"]},
+                HAIR: {id:5, listItems:["Shampoo","Balsam","Conditioner"]},
+                MAKEUP: {id:6, listItems:["Mascara","Eyeliner"]}
             }
         }
+    }
+
 
     render(){
         return(
-            <>
-                <div>MainContent</div>
-                <SideBar 
-                categories={this.state.categories} 
-                disabled={false}
-                hidden={false}
-                title={"All Categories"} />
-              {/*   <SideAd/> */}
-               {/*  <FilterBar/> */}
-            </>  
+            <div className="content">
+                <SideBar categories={this.state.categories} />
+                <SideAd/>
+               
+            </div>
+            
         )
     }
+
 }
 
-export default MainContent;
+export default Main
