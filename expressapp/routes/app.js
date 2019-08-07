@@ -1,9 +1,11 @@
 const express = require('express')
-const categ = require("./categories.json")
-const prod = require('./products.json')
-const http = require('http')
+const categ = require("../controllers/categories.json")
+const prod = require('../controllers/products.json')
+const https = require('https')
 const app = express()
+const fs = require('fs')
 const router = express.Router();
+/* const {errorHandler} = require('./errorhandler.js') */
 
 
 router.get('/categories', (req, res) => {
@@ -42,7 +44,12 @@ router.get('/products/:id', (req, res) => {
 })
 
 app.use(router);
+// app.use(errorHandler);
 
-const server = http.createServer(app);
+const server = https.createServer({
+    key: fs.readFileSync('./server.key'),
+    cert: fs.readFileSync('./server.cert')
+}, app);
 server.listen(5000);
 
+module.exports = app;
