@@ -1,0 +1,12 @@
+.mainitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 15px;
+    position: absolute;
+    padding-left: 140px;
+}
+.content{
+    display: flex;
+}

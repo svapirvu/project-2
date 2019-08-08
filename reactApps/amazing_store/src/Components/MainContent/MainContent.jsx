@@ -1,6 +1,8 @@
 import React from 'react'
 import SideBar from '../SideBar/SideBar'
 import SideAd from '../SideAd/SideAd';
+import FilterBar from '../FilterBar/FilterBar';
+import Products from '../Products/Products';
 // import './Main.css'
 
 
@@ -38,7 +40,8 @@ class Main extends React.Component {
             <div className="content">
                 <SideBar categories={this.state.categories} />
                 <SideAd/>
-               
+                <FilterBar/>
+                <Products/>
             </div>
             
         )

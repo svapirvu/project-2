@@ -1,11 +1,26 @@
 const express = require('express')
 const categ = require("../controllers/categories.json")
-const prod = require('../controllers/products.json')
+const prod = require("../controllers/products.json")
 const https = require('https')
 const app = express()
+const cors = require("cors")
 const fs = require('fs')
 const router = express.Router();
+
 /* const {errorHandler} = require('./errorhandler.js') */
+
+const whitelist = ["http://localhost:3000"];
+const corsOptions = {
+ origin: (origin, callback) => {
+   if (whitelist.indexOf(origin) !== -1) {
+    callback(new Error("Not allowed by CORS"));
+     
+   } else {
+     callback(null, true);
+   }
+ }
+};
+app.use(cors(corsOptions));
 
 
 router.get('/categories', (req, res) => {

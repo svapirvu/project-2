@@ -1,0 +1,6 @@
+.products{
+    display: inline-grid;
+    padding-left: 20rem;
+    grid-template-columns: 25%;
+    grid-auto-rows: 15%;
+}
